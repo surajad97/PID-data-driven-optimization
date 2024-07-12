@@ -39,6 +39,7 @@ def plot_simulation(Ca_dat, T_dat, Tc_dat, data_simulation):
     plt.xlim(min(t), max(t))
 
     plt.tight_layout()
+    plt.savefig('./figure/cstr_simulation.png')
     plt.show()
 
 ##################
@@ -90,7 +91,7 @@ def plot_training(data_simulation, repetitions):
     grid(True)
 
     plt.tight_layout()
-
+    plt.savefig('./figure/training.png')
     plt.show()
 
 #####################
@@ -135,4 +136,5 @@ def plot_convergence(Xdata, best_Y, Objfunc=None):
     grid(True)
     plt.xlim(0, n)
     plt.tight_layout()
+    plt.savefig('./figure/convergence.png')
     plt.show()
